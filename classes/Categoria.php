@@ -16,7 +16,7 @@ class Categoria
 
     public function listar()
     {
-        $query = "SELECT id, nome FROM categorias";
+        $query = "SELECT sid, nome FROM categorias";
         $conexao = Conexao::pegarConexao();
         $resultado = $conexao->query($query);
         $lista = $resultado->fetchAll();
